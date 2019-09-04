@@ -11,7 +11,7 @@
 *.pyc
 __pycache__/
 local_settings.py
-db.sqlite3
+chalicelib/db.sqlite3
 media
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
@@ -282,3 +282,4 @@ fabric.properties
 /.idea/modules.xml
 /.idea/tenants.iml
 /.idea/vcs.xml
+/.chalice/deployed/dev.json

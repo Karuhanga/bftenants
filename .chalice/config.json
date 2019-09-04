@@ -1,9 +1,20 @@
 {
   "version": "2.0",
   "app_name": "tenants",
+  "environment_variables": {
+        "DEBUG": "False"
+  },
+  "api_gateway_stage": "api",
   "stages": {
     "dev": {
-      "api_gateway_stage": "api"
+      "api_gateway_stage": "api-dev",
+      "environment_variables": {
+        "DEBUG": "True"
+  }
+    },
+    "prod": {
+      "subnet_ids": ["subnet-06143c15d76b28503", "subnet-0d8ee4b5ba424e569", "subnet-01b9174487b43acd3"],
+      "security_group_ids": ["sg-0e75ca28bcd336ae1", "sg-027b239cd4d229e27"]
     }
   }
 }
